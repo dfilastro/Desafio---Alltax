@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Desafio JavaScript AllTax</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <img class="menu-img" src="./public/54447-Copia.svg" alt="foto usuário" />
+        <div class="header-user">
+          <img src="./public/descobertas-de-albert-einstein-destaque.jpg" class="user-img" alt="foto usuário" />
+          <p>John Doe</p>
+        </div>
+        <div class="report-description">Sales Report</div>
+      </div>
+    </header>
+
+    <div class="select-box-container">
+      <select id="level1" onChange="random()">
+        <option value="">Select a Product</option>
+        <option value="computer">Computer</option>
+        <option value="TV">TV</option>
+        <option value="tablet">Tablet</option>
+      </select>
+
+      <select id="level2" onChange="random2()"></select>
+      <select id="level3" onChange="setValues()"></select>
+      <!-- <select id="level3"></select> -->
+    </div>
+
+    <div class="chart-container">
+      <canvas id="myChart"></canvas>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+      const myChart = new Chart(document.getElementById('myChart'), config);
+    </script>
+  </body>
+</html>
